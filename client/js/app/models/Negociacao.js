@@ -1,5 +1,5 @@
-class Negociacao{
-    constructor(data, quantidade, valor){
+class Negociacao {
+    constructor(data, quantidade, valor) {
         this._Data = new Date(data.getTime());
         this._Quantidade = quantidade;
         this._Valor = valor;
@@ -7,19 +7,19 @@ class Negociacao{
         Object.freeze(this);
     }
 
-    get Data(){
+    get Data() {
         return new Date(this._Data.getTime());
     }
 
-    get Quantidade(){
+    get Quantidade() {
         return this._Quantidade;
     }
 
-    get Valor(){
+    get Valor() {
         return this._Valor;
     }
 
-    get Volume(){
+    get Volume() {
         return this.Quantidade * this.Valor;
     }
 }
